@@ -1,6 +1,7 @@
 import {
   mobile,
   backend,
+  frontend,
   creator,
   web,
   javascript,
@@ -23,6 +24,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  vanderbilt,
+  vandyhome
+
 } from "../assets";
 
 export const navLinks = [
@@ -50,11 +54,11 @@ const services = [
   //   icon: mobile,
   // },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Frontend Developer",
+    icon: frontend,
   },
   {
-    title: "Content Creator",
+    title: "Digital Marketer",
     icon: creator,
   },
 ];
@@ -80,10 +84,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -108,45 +112,40 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "",
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "December 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  {
+    title: "React Native Developer",
+    company_name: "",
+    icon: reactjs,
+    iconBg: "#E6DEDD",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "I am a knowledgable and talented React Developer and I enjoy building apps using React.JS as my frontend JavaScript library.",
+    ],
+  },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    company_name: "Vanderbilt",
+    icon: vanderbilt,
+    iconBg: "",
+    date: "July 2017 - PRESENT",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -156,10 +155,10 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    company_name: "Vanderbilt Coding Bootcamp",
+    icon: vanderbilt,
+    iconBg: "",
+    date: "Dec 2020 - June 2020",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,37 +197,50 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "FutureVU",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project is an ongoing initiative being completed by Vanderbilt University. There are multiple stakeholders involved in the building/look, and feel of this project one of them primarily being the Digital Stragies team I am a part of. I along with my teammates have built out almost all of the pages you see on the sites currently made public in the new look and feel of the Vanderbilt web presence.",
     tags: [
       {
-        name: "react",
+        name: "SQL",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Wordpress",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "twig",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: vandyhome,
+    // source_code_link: "https://github.com/",
+    
   },
   {
-    name: "Job IT",
+    name: "React JS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This list of web applications showcases my understanding of React JS and the quality I bring to a React JS built website",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
@@ -238,6 +250,8 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    extra:"YouTube Clone",
+    extra2: "Spotify Music App Clone"
   },
   {
     name: "Trip Guide",

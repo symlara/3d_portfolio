@@ -12,8 +12,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
+  extra,
+  extra2,
   description,
   tags,
+  works,
   image,
   source_code_link,
 }) => {
@@ -69,6 +72,12 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+      <div className="mt-2">          
+        <h3 className="text-white font-bold text-[18px]">More</h3>
+      </div>
+       <p><a href="https://asym-youtube-clone.netlify.app/" className="text-secondary hover:text-white">{extra}</a></p>
+       <p><a href="https://asym-lyriks-app.netlify.app/" className="text-secondary hover:text-white">{extra2}</a></p>
+      {/* continue to add more projects related. use old portfolio as a guide for info */}
       </Tilt>
     </motion.div>
   );
